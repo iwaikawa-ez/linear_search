@@ -1,10 +1,13 @@
 <?php
 require("linear.php");
-if(linear_search($array, $search_num) == false)
+
+function message($array, $search_num)
 {
-  echo $search_num . "は見つかりませんでした";
+  if (linear_search($array, $search_num) == false) {
+    echo $search_num . "は見つかりませんでした\n";
+  } else {
+    echo $search_num . "が" . linear_search($array, $search_num) . "番目に見つかりました\n";
+  }
 }
-else
-{
-  echo $search_num . "が" . $i . "番目に見つかりました";
-}
+message(array(10, 1, 3, 5), 3);
+message(array(10, 1, 3, 5), 7);
