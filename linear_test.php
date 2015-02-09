@@ -3,7 +3,7 @@ require_once('linear.php');
 
 class linearSearchTest extends PHPUnit_Framework_TestCase
 {
-  public function test_can_find()
+  public function test_find()
   {
     $this->assertEquals(linear_search(array(10, 1, 3, 5), 3), 2);
   }
