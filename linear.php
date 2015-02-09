@@ -10,14 +10,8 @@
         break;
       }
     }
+    if(i >= $cnt)
+    {
+      return -1;
+    }
   }
-
-  if(linear_search($array, $search_num) == NULL)
-  {
-    echo $search_num . "は見つかりませんでした";
-  }
-  else
-  {
-    echo $search_num . "が" . $i . "番目に見つかりました";
-  }
-?>

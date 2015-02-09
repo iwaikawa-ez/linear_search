@@ -1,5 +1,5 @@
 <?php
-  require_once('linear.php');
+  require_once('exercise.php');
 
   class linearSearchTest extends PHPUnit_Framework_TestCase
   {
@@ -13,5 +13,3 @@
       $this->assertEquals(linear_search(array(10, 1, 3, 5), 7), NULL);
     }
   }
-
-?>
