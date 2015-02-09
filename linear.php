@@ -6,14 +6,18 @@
     {
       if($array[$i] == $search_num)
       {
-        echo $search_num . "が" . $i . "番目に見つかりました";
         return $i;
         break;
       }
     }
-    if($i >= $cnt)
-    {
-      echo $search_num . "は見つかりませんでした";
-    }
+  }
+
+  if(linear_search($array, $search_num) == NULL)
+  {
+    echo $search_num . "は見つかりませんでした";
+  }
+  else
+  {
+    echo $search_num . "が" . $i . "番目に見つかりました";
   }
 ?>
