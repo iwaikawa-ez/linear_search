@@ -5,12 +5,12 @@
   {
     public function test_can_search()
     {
-      $this->assertEquals(linear_search(array(10, 1, 3, 5), 3), "3が2番目に見つかりました");
+      $this->assertEquals(linear_search(array(10, 1, 3, 5), 3), 2);
     }
 
     public function test_cannot_search()
     {
-      $this->assertEquals(linear_search(array(10, 1, 3, 5), 7), "7は見つかりませんでした");
+      $this->assertEquals(linear_search(array(10, 1, 3, 5), 7), NULL);
     }
   }
 
