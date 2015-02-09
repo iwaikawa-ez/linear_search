@@ -1,6 +1,6 @@
 <?php
 require("linear.php");
-if(linear_search($array, $search_num) == -1)
+if(linear_search($array, $search_num) == false)
 {
   echo $search_num . "は見つかりませんでした";
 }

@@ -12,6 +12,6 @@ function linear_search($array, $search_num)
   }
   if(i >= $cnt)
   {
-    return -1;
+    return false;
   }
 }
