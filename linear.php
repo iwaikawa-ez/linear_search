@@ -6,10 +6,7 @@ function linear_search($array, $search_num)
   {
     if($array[$i] == $search_num) {
       return $i;
-      break;
     }
   }
-  if(i >= $cnt) {
-    return false;
-  }
+  return false;
 }
